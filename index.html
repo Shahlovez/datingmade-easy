@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dating.css"> 
+    <title>Dating website</title>
+</head>
+<body>
+    <main>
+    <section>
+            <video autoplay muted loop id="myVideo">
+            <source src="video/Couple.mp4" type="video/mp4">
+            </video>
+    </section>
+
+     <div class="content" style ="position:fixed; right:200px;">
+            <h1>Finding Love Made easy</h1>
+            <p class="intro">Enter Your Details For Our Dating Website</p>
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data">
+    
+    <fieldset>
+        <legend>Your Face</legend>
+        <div>
+            <label for="avatar">Upload Your Image:</label>
+            <input type="file" id="avatar" name="avatar" required >
+        </div>
+        <p>Image Preview:</p>
+        <img id="preview" width="500"/>
+    </fieldset>      
+        
+     <fieldset>
+        <legend>Your Details</legend>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+    </div>
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="woman" name="gender" value="woman" required>
+        <label for="woman">Woman</label>
+        <input type="radio" id="man" name="gender" value="man" required>
+        <label for="man">Man</label>
+         <input type="radio" id="nonebinary" name="gender" value="nonebinary" required>
+        <label for="other">Other</label> 
+    </div>
+
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100">
+    </div>
+
+    <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+
+    <div>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+    </div>
+        
+    <div>
+        <label for="country">Country:</label>
+        <select id="country" name="county">   
+                <option> -- Choose a country -- </option>
+                <option value="brazil"> Brazil</option>
+                <option value="france">France</option> 
+                <option value="japan"> Japan</option>
+                <option value="libya"> Libya</option>
+                <option value="usa">U.S.A.</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="salary">Salary:</label>
+        <span class="range-caption">Low</span>
+        <input type="range" id="salary" name="salary" min="0" max="100" value="50">
+        <span class="range-caption">High</span>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Your Contact Information</legend>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <textarea cols="40" id="address" name="address"></textarea>
+    </div>
+    <div>
+        <label>Contact Method(s)</label>
+        <input type="checkbox" id="emailCheckbox" name="contact" value="email">
+        <label for="emailCheckbox">Email</label>
+        <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+        <label for="phoneCheckbox">Phone</label>
+    </div>
+</fieldset>
+
+<div>
+    <input type="submit">
+</div>
+
+</form>
+</div>
+</main>
+<script src="https://url.nucamp.co/datingjs"></script>
+</body>
+</html>
+

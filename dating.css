@@ -1,0 +1,98 @@
+
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+   @media (max-width: 1100px) {
+    #myVideo {
+      min-width: 10%;
+    } 
+   }
+
+  .content {
+    margin-top: 30px;
+    bottom:auto;
+    background: rgba(0, 0, 0, 0);
+    color: darkorchid;
+    width:fit-content;
+    min-height: 10px;
+  }
+  
+body {
+    margin-top: auto;
+    font-family: 'Verdana', 'Arial', sans-serif; 
+}
+h1{
+    font-family:'Pacifico', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding: 0; 
+}
+.intro{
+    text-align: center;
+}
+p {
+    margin: 0; 
+    text-align: left;
+}
+legend {
+    background-color:rgb(150, 213, 218);
+    border-radius: 10px;
+    color:deeppink; 
+    padding: 12px;
+    border: 5px solid rgb(0, 139, 132);
+    font-weight: bold;
+}
+fieldset {
+    background-color: rgb(150, 213, 218);
+    border: 5px solid rgb(0, 139, 132);
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 720px; 
+}
+
+div {
+    margin: 10px; 
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 200px; 
+}
+
+input[type="radio"] + label, 
+input[type="checkbox"] + label {
+    width: auto; 
+}
+
+.range-caption{
+    background: darkcyan;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    background: darkcyan; 
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 12px; 
+}
+div:hover {
+    color:deeppink; 
+}
+/* 
+@media (max-width: 750px){
+    main {
+       min-width: 650px;
+    }
+} */
